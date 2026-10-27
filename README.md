@@ -25,23 +25,16 @@ The runes ᛅᛁᚾ are a Viking Age-style representation of einn, Old Norse for
 
 ## Device design
 
-<img src="media/aegir-device-concept-render.png" alt="Concept render of the Ægir handheld trimix analyzer with a black 3D-printed case, white logo, plastic gas fittings and portrait touchscreen" width="420">
+<img src="media/renders/aegir-portrait.png" alt="CAD-based render of the current Ægir prototype: black printed enclosure, flush white Ægir symbol and runes, side gas fitting and illuminated power button, with the live-analysis simulator on its portrait touchscreen" width="520">
 
-*Concept render of the proposed enclosure and interface.*
+*CAD-based render of the current prototype.*
 
-## PCB design
 
-| Main analyzer PCB | USB input PCB |
-| :---: | :---: |
-| <a href="hardware/pcb/review-images/README.md"><img src="hardware/pcb/review-images/01-main-3d-top.png" alt="KiCad 3D view of the main analyzer PCB" width="190"></a> | <a href="hardware/pcb/review-images/README.md"><img src="hardware/pcb/review-images/08-usb-front-routing.png" alt="Front copper routing of the USB input PCB" width="220"></a> |
-
-[View the PCB schematics and routing images](hardware/pcb/review-images/README.md).
-These are design-review snapshots; the PCBs are still on fabrication hold.
+<img src="media/renders/aegir-exploded.png" alt="Exploded CAD-based render showing the enclosure, display assembly, two-cell battery holder, populated KiCad PCB with bottom USB-C, sensor manifold, reconstructed sensors, rear cover and fasteners" width="960">
 
 ## Screenshots
 
-These screens show the simulator with demo data. Swipe horizontally between
-live analysis and analysis details; simulator profiles are in the top status banner.
+These screens show the simulator with demo data.
 
 | Main menu | Live analysis | Analysis details |
 | :---: | :---: | :---: |
@@ -84,13 +77,6 @@ make push PORT=/dev/cu.usbserial-110
 Replace the example `PORT` with the port reported by `make devices`. See the
 [firmware guide](software/firmware/README.md) for other build options.
 
-## Files
-
-- [Firmware and simulator](software/firmware/)
-- [PCB review images](hardware/pcb/review-images/README.md), [main PCB](hardware/pcb/analyzer/Trimix_Analyzer.kicad_pro) and [USB input PCB](hardware/pcb/usb-input/Trimix_USB_Input.kicad_pro)
-- [Enclosure CAD](hardware/cad/rev04/3d-print/Trimix_Enclosure_A3_PrintReview.f3d) and [3D-print files](hardware/cad/rev04/3d-print/printing/)
-- [Logo](logo/README.md)
-
 ## Contributing and future ideas
 
 Design reviews, measurements, documentation and software fixes are welcome.
@@ -101,6 +87,12 @@ collects community suggestions without promising a release date.
 
 Maintainers can use the [repository guide](.github/MAINTAINING.md). For
 exploitable vulnerabilities, use the [private reporting route](SECURITY.md).
+
+## Acknowledgements
+
+A big thank you to [@tobiasruber](https://github.com/tobiasruber) for reviewing and
+improving the PCB design. His help is a big reason this project is still alive
+and moving forward.
 
 ## License
 
